@@ -6,11 +6,16 @@ package edu.grinnell.csc207.soundsofsorting;
  * in the program.
  */
 public class NoteIndices {
+    int[] indices;
+
     /**
      * @param n the size of the scale object that these indices map into
      */
     public NoteIndices(int n) {
-        // TODO: fill me in!
+        indices = new int[17];
+        for(int i=0; (i<n) && (i<17); i++) {
+            indices[i] = n; 
+        }
     }
     
     /**
